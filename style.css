@@ -1,0 +1,337 @@
+@charset "utf-8";
+@font-face {
+  font-family: "Raleway";
+  src: url("/fonts/Raleway-Black.ttf");
+  font-style: normal;
+  font-weight: 900;
+}
+
+* {
+  margin: 0;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
+
+aside {
+  grid-area: aside;
+}
+
+table,
+td,
+th {
+  border: 1px solid black;
+}
+
+table {
+  border-spacing: 10px 30px;
+  caption-side: bottom;
+  empty-cells: hide;
+  table-layout: fixed;
+  border-collapse: separate;
+}
+.col-1 {
+  width: 200px;
+}
+.col-2 {
+  width: 100px;
+}
+.align {
+  vertical-align: bottom;
+}
+caption {
+  text-indent: 1.25cm;
+  text-align: left;
+}
+
+thead {
+  height: 100px;
+  background: rgb(255, 232, 228);
+}
+
+figcaption {
+  text-align: center;
+}
+
+ul {
+  list-style-type: upper-roman;
+  list-style-position: inside;
+  list-style-image: url("/triangle.svg");
+  list-style: iside url("/triangle.svg");
+}
+ul > li::before {
+  content: "/";
+}
+
+dd {
+  text-indent: 1.25cm;
+}
+
+#number {
+  border: 3px solid green;
+}
+[type="text"] {
+  border: 5px solid blue;
+}
+[src$=".jpg"] {
+  border: 5px solid green;
+  width: 200px;
+}
+ul > li {
+  border: 3px solid green;
+  margin: 3px;
+  padding: 3px;
+}
+dd::after {
+  content: " *";
+}
+dd::before {
+  content: "* ";
+}
+.test {
+  /*  display: inline-block; */
+  border: 10px solid black;
+  margin-top: 200px;
+  margin: 30px 0 30px;
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  box-sizing: content-box;
+  min-width: 750px;
+  max-width: 1000px;
+  background: gray;
+}
+/* .test:hover {
+    visibility: hidden;
+} */
+section {
+  overflow: hidden;
+}
+.block {
+  width: 300px;
+  height: 150px;
+  border: 10px solid green;
+  background: violet;
+  width: 300px;
+  height: 150px;
+  position: relative;
+  float: left;
+}
+p {
+  position: relative;
+  clear: both;
+}
+.position {
+  padding: 20px;
+  box-sizing: border-box;
+  background: white;
+  background-image: url(/picture.jpg), url(/world-continents.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: repeat;
+  background-color: gainsboro;
+  background-clip: content-box;
+  background-attachment: local;
+  position: relative;
+  border-bottom-width: 20px;
+  border-top-width: 10px;
+  border-left-width: 5px;
+  border-right-width: 40px;
+  border-style: solid;
+  border-bottom-style: dashed;
+  border-color: #d06363;
+  border-top-color: green;
+  border-radius: 20px;
+  border-top-left-radius: 100px;
+  box-shadow: 5px 10px 15px rgb(140, 140, 140);
+  cursor: pointer;
+}
+header {
+  grid-area: header;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+}
+textarea {
+  resize: vertical;
+  caret-color: red;
+}
+
+h1 {
+  font: 30px "Ubuntu";
+  font-weight: 900;
+  font-style: normal;
+  font-variant: normal;
+  font-stretch: condensed;
+  line-height: 1;
+  letter-spacing: 1px;
+  background-image: url(/picture.jpg);
+  background-clip: text;
+  font-variant-numeric: lining-nums;
+  text-align: left;
+  hyphens: auto;
+  text-indent: 1.25cm;
+  text-transform: uppercase;
+  word-spacing: 20px;
+  white-space: pre-line;
+  text-decoration-line: overline;
+  text-decoration-color: aquamarine;
+  text-decoration-style: wavy;
+  text-decoration-thickness: 2px;
+  text-decoration: underline aqua wavy 3px;
+  text-shadow: 5px 10px 5px rgba(0, 0, 0, 0.4);
+  color: rgb(3, 3, 108);
+  opacity: 0.8;
+  user-select: all;
+}
+.column {
+    background: lightcyan;
+   /* column-count: 2; */
+    column-fill: auto;
+    height: 110px;
+    column-rule-style: solid;
+    column-rule-color: blue;
+    column-rule-width: 1px;
+    column-rule: 1px solid blue;
+    column-width: 200px;
+}
+.transform {
+  background: rgb(55, 121, 236);
+  width: 400px;
+  height: 200px;
+  /* transform: matrix(0.5, 0.1, 0, 1, 200, 0); scaleX, skewX, sqewY, scaleY, translateX, translateY */
+  transform: translate(100px, 100px);
+  transform: translateX(200px);
+  transform: translateY(200px) translateX(200px);
+  transform: scale(0.5, 2);
+  transform: scaleX(0.5) scaleY(2);
+  transform: skew(10deg, 30deg);
+  transform: skewX(10deg) skewY(30deg);
+  transform: rotate(0turn);
+  transform-style: preserve-3d;
+  animation-name: test;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-delay: 500ms;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-play-state: running;
+  /* animation: test2 3s linear 500s infinite alternate running; */
+}
+@keyframes test {
+  0% {
+    transform: rotate(0turn);
+    background: pink;
+  }
+  50% {
+    transform: rotate(0.5turn);
+    background: green;
+  }
+  100% {
+    transform: rotate(1turn);
+    background: pink;
+  }
+}
+
+dl:hover {
+  background: pink;
+  transition-property: all;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 0;
+}
+dl {
+  transition: all 2s;
+}
+.picture:hover {
+  filter: blur(0);
+  animation: 3s infinite pulse;
+  animation-composition: add;
+}
+
+@keyframes pulse {
+  0% {
+    filter: blur(15px);
+  }
+  100% {
+    filter: blur(30px);
+  }
+}
+.flex-container {
+  display: flex;
+/*   flex-direction: row;
+  flex-wrap: wrap; */
+  flex-flow: row wrap;
+  background: rgb(186, 186, 186);
+  height: 400px;
+  min-width: 500px;
+  justify-content: center;
+  align-items:stretch;
+  justify-items: stretch;
+}
+.flex-container > div {
+  background: pink;
+  margin: 5px;
+  flex-grow: 1;
+  /* flex-basis: 200px; */
+}
+.flex-container > div:nth-child(7) {
+  background-color: rgb(142, 201, 221);
+  order: -1;
+
+}
+.flex-container > div:nth-child(6) {
+  background-color: rgb(142, 201, 221);
+  order: -2;
+}
+.flex-container > div:nth-child(1) {
+  background-color: rgb(142, 201, 221);
+  flex-shrink: 0.1;
+}
+
+.grid-container {
+  display: grid;
+  background: rgb(117, 112, 112);
+  height: 400px;
+  min-width: 500px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template: "header header header" 1fr
+                 "main main aside" 1fr
+                 "footer footer footer" 1fr
+                 / 1fr 1fr 1fr;
+/* grid-row-gap: 10px;
+grid-column-gap: 10px; */
+grid-gap: 10px 10px;
+grid-auto-rows: 1fr;
+grid-auto-columns: 150px;
+}
+
+.grid-container > div {
+background: #d06363;
+}
+.grid-container > div:nth-child(1) {
+  grid-area: header;
+}
+.grid-container > div:nth-child(2) {
+  grid-area: main;
+}
+.grid-container > div:nth-child(3) {
+  grid-area: aside;
+}
+.grid-container > div:nth-child(4) {
+  grid-area: footer;
+}
+.grid-container > div:nth-child(5) {
+ /*  grid-row-start: 4;
+  grid-row-end: 6; */
+  grid-row: 4/6;
+/*   grid-column-start: 1;
+  grid-column-end: 3; */
+  grid-column: 1/3;
+}

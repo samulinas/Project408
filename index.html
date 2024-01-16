@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    <meta http-equiv="refresh" content="10; url=https://cssreference.io"> -->
+    <meta name="description" content="Опис створеної сторінки.">
+    <meta name="keywords" content="Lorem, Deleniti, Totam">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,900&display=swap" rel="stylesheet">
+    <title>Документ - Мій сайт №1</title>
+    <style>
+
+    </style>
+    <script>
+        console.log("Привіт світ!");
+    </script>
+    <noscript>У вас не працює JS!</noscript>
+    <base target="_blank">
+</head>
+
+<body style="display: grid; grid-template: 'header header' 100px 'main aside' 1fr 'footer footer' 70px;">
+    <header style="background: lightgreen; padding: 10px;">
+        <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Totam, modi fuga sunt excepturi maiores hic at quo
+            nostrum autem corporis!</h1>
+        <img src="picture.png" alt="Alt text"><br>
+        <nav style="background: lightgoldenrodyellow;">
+            <a href="https://google.com">Google</a>
+            <a href="/contacts.html">Інша сторінка</a>
+            <a href="#footer" target="_self">Якір</a>
+        </nav>
+    </header>
+    <main style="background: lightcyan">
+        <section style="background: rgb(241, 239, 239); margin: 0 10px;">
+            <h2>Документ 1.1</h2>
+            <h3>Документ 2.1</h3>
+            <h4>Документ3.1</h4>
+            <div class="position">
+                <div class="block">Блоковий контейнер</div>
+                <div class="block">Блоковий контейнер</div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam cum mollitia velit aspernatur, quis
+                    obcaecati voluptatibus ducimus officia incidunt alias iste iure architecto? Quisquam non numquam
+                    beatae maxime expedita rem. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita
+                    mollitia, voluptates ratione dolorum accusantium consectetur suscipit a aspernatur modi sint
+                    temporibus error, ea totam commodi eaque vero ut beatae</p>
+            </div>
+            <p class="column"><strong>Lorem</strong> ipsum, dolor sit <b>amet</b> consectetur <del>adipisicing</del><ins>elit.</ins>
+                Deleniti ad, quis facilis nobis
+                veniam error temporibus sint tenetur officiis sunt odio culpa eligendi! Totam et ullam ex dignissimos,
+                veniam
+                corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem ratione magnam nemo sapiente
+                inventore eius rerum doloribus perferendis! Temporibus assumenda ratione porro id veritatis voluptates
+                odit asperiores illum adipisci sit!
+            </p>
+            <u>Lorem ipsum, dolor sit amet</u>
+            <s>Lorem ipsum, dolor sit amet</s>
+            <blockquote cite="https://google.com">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In maxime
+                eligendi
+                aperiam doloremque commodi, perferendis reprehenderit <mark>sunt unde eum</mark> voluptatum cum vero
+                repellendus amet.
+                Tempore cupiditate unde nemo minima id?</blockquote>
+            <q>Lorem ipsum dolor sit amet</q>
+            <cite>Gooogle.com</cite>
+            <ul>
+                <li>q</li>
+                <li>
+                    <ol start="5" type="I">
+                        <li>q</li>
+                        <li>w</li>
+                        <li>e</li>
+                    </ol>
+                </li>
+                <li>e</li>
+            </ul>
+            <br><br>
+            <dl>
+                <dt>Назва терміну</dt>
+                <dd>Опис терміну</dd>
+                <dt>Назва терміну</dt>
+                <dd>Опис терміну</dd>
+            </dl>
+            <br><br>
+            <div class="transform color">Блок для трансформації</div>
+            <div class="test">Блочний контейнер</div>
+            <span class="test">Строковий контейнер</span>
+            <br><br>
+            <form action="/handler.php" method="post">
+                <input id="text" list="datalist" type="text" placeholder="Текстове поле" maxlength="10">
+                <datalist id="datalist">
+                    <option value="Red">Red</option>
+                    <option value="Green">Green</option>
+                    <option value="Blue">Blue</option>
+                </datalist>
+                <br>
+                <input type="number" name="number" id="number" min="0" max="3" step="0.5"><br>
+                <input type="button" value="Кнопка"><br>
+                <input type="reset" value="Скинути"><br>
+                <button><img src="/picture.jpg" width="20" alt="nature"></button><br>
+
+                <fieldset>
+                    <legend>Кнопки вибору</legend>
+                    <input type="checkbox" name="checkbox" id="checkbox-1">
+                    <label for="checkbox-1">Чекбокс 1</label><br>
+                    <input type="checkbox" name="checkbox" id="checkbox-2" checked>
+                    <label for="checkbox-2">Чекбокс 2</label><br>
+                    <hr>
+                    <input type="radio" name="radio" id="radio-1">
+                    <label for="radio-1">Перемикач 1</label><br>
+                    <input type="radio" name="radio" id="radio-2">
+                    <label for="radio-2">Перемикач 2</label><br>
+                </fieldset>
+
+                <input type="password" name="password" id="password" disabled><br>
+                <input type="color" name="color" id="color"><br>
+                <input type="date" name="date" id="date"><br>
+                <input type="time" name="time" id="time"><br>
+                <input type="datetime-local" name="datetime-local" id="datetime-local"><br>
+                <input type="email" name="email" id="email" required><span style="color: red;">*</span><br>
+                <input type="file" name="file" id="file" multiple accept="application/pdf"><br>
+                <input type="hidden" name="hidden"><br>
+                <input type="month" name="month" id="month"><br>
+                <input type="week" name="week" id="week"><br>
+                <input type="search" name="search" id="search"><br>
+                <input type="url" name="url" id="url"><br>
+                <input type="range" name="range" id="range"><br>
+                <textarea name="textarea" id="textarea" cols="30" rows="3">Текст за замовчуванням</textarea><br>
+                <select name="select" id="select">
+                    <optgroup label="Кольори">
+                        <option value="Жовтий">Жовтий</option>
+                        <option value="Зелений">Зелений</option>
+                        <option value="Помарачевий">Помарачевий</option>
+                    </optgroup>
+                    <optgroup label="Кольори">
+                        <option value="Жовтий">Жовтий</option>
+                        <option value="Зелений">Зелений</option>
+                        <option value="Помарачевий">Помарачевий</option>
+                    </optgroup>
+                </select>
+                <input type="submit" value="Відправити">
+            </form>
+        </section>
+        <br>
+        <hr><br>
+        <section style="background: rgb(233, 214, 214); margin: 0 10px;"">
+            <h5>Документ</h5>
+            <h6>Документ</h6>
+            <dfn><abbr title=" Мова гіпертекстової розмітки">HTML</abbr></dfn><span> - Мова <i>гіпертекстової</i>
+                <em>розмітки</em></span>
+            <pre>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate ipsa fugiat velit 
+            
+            sunt voluptatem! Repellat fugiat illum magnam natus, est nam ipsum ullam 
+            
+            in et doloribus! Ut eveniet mollitia eius?
+            </pre>
+            <span>H<sub>2</sub>O, <var>x</var><sup>2</sup></span>
+            <time datetime="14-07-2023">2 дні тому</time>
+            <table>
+                <caption>Таблиця 1 - Заголовок таблиці</caption>
+                <colgroup>
+                    <col class="col-1" style="background: rgb(185, 231, 185);" span="2">
+                    <col class="col-2">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th class="align" rowspan="2">1</th>
+                        <th>2</th>
+                        <th>3</th>
+                    </tr>
+                    <tr>
+                        <th>5</th>
+                        <th>6</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>7</td>
+                        <td>8</td>
+                        <td>9</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td>12</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td align="right" colspan="2">Результат:</td>
+                        <td>14</td>
+                    </tr>
+                </tfoot>
+            </table>
+            <img src="/world-continents.png" alt="world" usemap="#world-continents">
+            <map name="world-continents">
+                <area title="North America" href="https://en.wikipedia.org/wiki/North_America" shape="poly"
+                    coords="48,89,67,69,77,49,140,0,68,0,6,10,4,31,16,69">
+                <area title="South America" href="https://en.wikipedia.org/wiki/South_America" shape="poly"
+                    coords="48,88,61,74,119,99,95,160,66,159">
+                <area title="Europe" href="https://en.wikipedia.org/wiki/Europe" shape="poly"
+                    coords="124,49,145,46,158,50,187,43,198,6,146,1,115,21">
+                <area title="Africa" href="https://en.wikipedia.org/wiki/Africa" shape="poly"
+                    coords="121,53,140,47,169,51,186,77,196,80,188,137,156,136,138,97,118,86">
+                <area title="Asia" href="https://en.wikipedia.org/wiki/Asia" shape="poly"
+                    coords="166,50,184,77,201,74,215,91,258,108,263,87,283,74,297,8,192,3,191,29,187,46,170,42">
+                <area title="Australia" href="https://en.wikipedia.org/wiki/Australia_(continent)" shape="poly"
+                    coords="257,107,263,85,314,89,316,137,294,151,249,132,248,114">
+            </map>
+            <progress max="100" value="40"></progress>
+            <meter min="0" max="100" low="20" high="90" value="19"></meter>
+            <iframe style="border: 1px solid black;" src="/contacts.html" frameborder="0"></iframe>
+            <div class="flex-container">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+            </div>
+            <div class="grid-container">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+                <div>5</div>
+                <div>6</div>
+                <div>7</div>
+            </div>
+        </section>
+    </main>
+    <aside style="background: lightsteelblue;">
+        <kbd>CTRL + E</kbd>
+        <code>console.log("Привіт світ!");</code>
+        <samp>Привіт світ!</samp>
+        <figure>
+            <a href="/contacts.html">
+                <img class="picture" src="/picture.jpg" alt="picture" width="100%">
+            </a>
+            <figcaption>Рисунок 1 - Поле</figcaption>
+        </figure>
+    </aside>
+    <footer id="footer" style="background: lightblue;">
+        <address>Назва міста, вулиця, будинок, кв.</address>
+        <small>
+            <p class="p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti ad, quis facilis nobis
+                veniam error temporibus sint tenetur officiis sunt odio culpa eligendi! Totam et ullam ex dignissimos,
+                veniam
+                corporis?</p>
+        </small>
+    </footer>
+</body>
+
+</html>
