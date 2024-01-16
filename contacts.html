@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .href:active {
+            color: green;
+        }
+        .href:hover {
+            font-weight: 900;
+        }
+        #checkbox:checked {
+            outline: 3px solid blue;
+            padding: 10px;
+            margin: 10px;
+        }
+        input:{
+            outline: 3px solid green;
+        }
+        textarea:disabled {
+            background: gray;
+        }
+        textarea:enabled {
+            background: yellow;
+        }
+        :focus {
+           outline: 3px solid blue;
+        }
+        p:empty::before{
+            content: "Нічого не відображається";
+        }
+        .container > div:first-child {
+            background: pink;    
+        }
+        .container > div:last-child {
+            background: darkmagenta;    
+        }
+        .container > div:nth-child(3) {
+            background: green;  
+        }
+        div.container :first-of-type {
+            background: red; 
+        }
+        div.container :last-of-type {
+            background: darkkhaki; 
+        }
+        div.container :not(:nth-of-type(odd)) {
+            background: beige;
+        }
+        input[type="number"]:in-range {
+            background: green;
+        }
+        input[type="number"]:out-of-range {
+            background: red;
+        }
+        .container :only-child {
+            background: pink;
+        }
+        input[type="text"]::placeholder {
+            color: red;
+        }
+        input[type="text"]::after {
+            content: "text";
+        }
+
+    </style>
+</head>
+<body>
+    <P>Ви перейшли на сторінку контактів</P>
+    <a class="href" href="/">Головна сторінка</a>
+    <form action="">
+        <input type="text" placeholder="Hello world">
+        <input type="number" name="number" id="number" min="1" max="10">
+        <input type="checkbox" name="checkbox" id="checkbox" checked>
+        <input type="radio" name="radio" id="radio-1" checked>
+        <input type="radio" name="radio" id="radio-2">
+        <textarea name="textarea" id="textarea" cols="30" rows="10">Hello world</textarea>
+    </form>
+    <p></p>
+    <p></p>
+    <div class="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>
+            <span>4.1</span>
+        </div>
+        <span>5</span>
+        <span>6</span>
+    </div>
+</body>
+</html>
