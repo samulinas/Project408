@@ -123,8 +123,6 @@ function calcSwitch() {
 let b = 5;
 console.log(b);
 
-
-
 let showMessage = function(hello = "Добрий день") {
   console.log(hello);
   return hello;
@@ -133,5 +131,5 @@ showMessage("Привіт!");
 showMessage("Вітаю");
 let c = showMessage();
 console.log(c);
-
 //calcSwitch();
+
