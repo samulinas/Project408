@@ -133,3 +133,10 @@ let c = showMessage();
 console.log(c);
 //calcSwitch();
 
+let user2 = {     // объект
+  name: "John",  // под ключом "name" хранится значение "John"
+  age: 30        // под ключом "age" хранится значение 30
+};
+console.log(user2);
+delete user2.age;
+console.log(user2);
